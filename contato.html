@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 05</title>
+</head>
+<body>
+    <table>
+
+        <table border="0"align="center" width="750" border="1">
+            <tr align="center">
+                <th><hr>Clínica Veterinária PetCare<hr></th>
+               <td><hr><a href="home.html">Home</a><hr></td>
+               <td><hr><a href="/sobre.html">Sobre Nós</a><hr></td>
+               <td><hr><a href="/contato.html">Contato</a><hr></td>
+            </tr>
+
+            <tr >
+                <td>
+    
+                  <fieldset>
+    
+                    <legend>Dados do Cliente:</legend>
+    
+                    <form action="enviar.php" method="post" name="cadastro"
+                      oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+    
+                      <table cellspacing=0" cellpadding="0" align="center" width="550" bgcolor="lightblue" border="1">
+    
+                        <tr>
+                          <td><label>Nome:</label></td>
+                          <td><input type="text" id="nome" name="nome" size="40" maxlength="60"
+                              placeholder="Digite seu nome" required></td>
+                        </tr>
+    
+                        <tr>
+                          <td><label>E-mail:</label></td>
+                          <td><input type="email" id="mail" name="mail" size="40" maxlength="60"
+                              placeholder="Digite seu E-mail" required></td>
+                        </tr>
+    
+                        <tr>
+                          <td><label>Telefone:</label></td>
+                          <td><input type="tel" id="telefone" name="telefone" size="40" maxlength="15"
+                              placeholder="Informe seu telefone - (XX) XXXXX-XXXX" required></td>
+                        </tr>
+    
+                        <tr>
+                          <td><label>Endereço:</label></td>
+                          <td><input type="text" id="endereco" name="endereco" size="40" maxlength=""
+                              placeholder="Informe seu Endereço" required></td>
+                        </tr>
+                        
+                        <tr>
+                            <td><label>Qual é o seu Pet:</label></td>
+
+                            <td><label><input type="radio" id="pet" name="pet" value="dinheiro" required>
+                                Cachorro</label>
+                              <br />
+                              <label><input type="radio" id="pet" name="pet" value="credito" required>
+                               Gato</label>
+                              <br />
+                              <label><input type="radio" id="pet" name="pet" value="debito" required>
+                                Cavalo</label>
+                              <br />
+                              <label><input type="radio" id="pet" name="pet" value="pix" required>
+                                Outro</label>
+                            </td>
+                          </tr>
+
+                          <tr><td>
+                            <label>Qual é o porte do seu Pet:</label></td> <td>
+                            <input required list="renda" />
+                            <datalist id="renda" name="renda">
+                            
+                                <option value="Pequeno"></option>
+                                <option value="Médio"></option>
+                                <option value="Grande"></option>
+                            </datalist>
+                            </td></tr>
+                       
+                       
+    
+                        <tr>
+                          <td><label>Forma de Pagamento:</label></td>
+                          <td><label><input type="radio" id="pagamento" name="pagamento" value="dinheiro" required>
+                              Dinheiro</label>
+                            <br />
+                            <label><input type="radio" id="pagamento" name="pagamento" value="credito" required>
+                              Cartão de Crédito</label>
+                            <br />
+                            <label><input type="radio" id="pagamento" name="pagamento" value="debito" required>
+                              Cartão de Débito</label>
+                            <br />
+                            <label><input type="radio" id="pagamento" name="pagamento" value="pix" required>
+                              Pix</label>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><label> Comprovante do Pagamento - Via Pix : </label></td>
+                          <td><input type="file" id="anexar" name="anexar" /></td>
+                        </tr>
+    
+                        <tr>
+                          <td><label>Agende seu Horário:</label></td>
+                          <td>
+                            <label>
+                            <input type="datetime-local" id="data_hora" name="data_hora" min="2024-08-14T18:00"
+                              max="2024-12-20T23:59" required>
+                        </tr>
+    
+                        <tr>
+                          <td><label>Qual dos nossos Médicos você precisa:</label></td>
+                          <td><label><input type="radio" id="funcionario" name="funcionario" value="f" required>
+                            Dr. João Silva</label>
+                            <br />
+                            <label><input type="radio" id="funcionario" name="funcionario" value="f" required>
+                                Dra. Maria Oliveira</label>
+                            <br />
+                            <label><input type="radio" id="funcionario" name="funcionario" value="f" required>
+                                Dr. Pedro Costa</label>
+                          </td>
+                        
+    
+                        <tr>
+                          <td><label>Satisfação do Cliente:</label></td>
+                          <td><input type="range" id="a" name="a" value="0" min="0" max="10" size="10" maxlength="" />
+                          </td>
+                          <td><input type="hidden" id="b" name="b" value="0" min="0" max="10" size="10" disabled /></td>
+                          <td><output name="x" for="a b"></output></td>
+                        </tr>
+    
+                        <tr>
+                          <td><label> Feedback: </label></td>
+                          <td><textarea name="coment" id="coment" cols="40" rows="6" maxlength="240"
+                              placeholder="Digite seu feedback"></textarea></td>
+                        </tr>
+    
+                        <tr>
+                          <td colspan="2" align="center">
+                            <input type="submit" id="enviar" name="enviar" value="Enviar" />
+                            <input type="reset" id="limpar" name="limpar" value="Cancelar">
+                          </td>
+                        </tr>
+                      </table>
+    
+    
+                </td>
+              </tr>
+          </form>
+    
+          </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <tr align="center">
+                <td> <hr>Rodapé<hr></td>
+                <td><hr><a href="home.html">Home</a><hr></td>
+                <td><hr><a href="/sobre.html">Sobre</a><hr></td>
+                <td><hr><a href="/contato.html">contato</a><hr></td>
+             </tr>
+     
+        
+    </table>
+</body>
+</html>
